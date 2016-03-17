@@ -1,0 +1,26 @@
+{
+	"app": {
+		"name": "三目並べ NEO",
+		"back": "戻る",
+      "translating":""
+	},
+	"home": {
+		"faceToFace": "ふたりで対戦",
+		"webBattle": "ネット対戦",
+		"howto": "あそびかた",
+		"vsComputer": "コンピュータ対戦"
+	},
+	"game": {
+		"players": [
+			"先手",
+			"後手"
+		],
+		"phase": "の番です",
+		"wins": "の勝利です！",
+		"button": [
+			"続ける",
+			"やめる"
+		],
+		"continuePrompt": "盤面を白紙に戻して続けますか？"
+	}
+}

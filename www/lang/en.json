@@ -1,0 +1,30 @@
+{
+	"app": {
+		"name": "Tic-Tac-Toe NEO",
+		"back": "Back",
+		"translating": "Sorry, this section is under translation."
+	},
+	"home": {
+		"faceToFace": "Face-To-Face",
+		"webBattle": "Tic-Tac-Toe WEB",
+		"howto": "How to play",
+		"vsComputer": "HUMAN versus COMPUTER"
+	},
+	"game": {
+		"players": [
+			"1st player's",
+			"2nd player's"
+		],
+		"computer": [
+			"Your",
+			"Computer's"
+		],
+		"phase": " phase",
+		"wins": " victory!",
+		"button": [
+			"Replay",
+			"Exit"
+		],
+		"continuePrompt": "Play again?"
+	}
+}

@@ -1,0 +1,20 @@
+﻿<ons-page ng-controller="TttCtrl">
+	<ons-toolbar>
+		<div class="center">
+			{{utl.msg}}
+		</div>
+	</ons-toolbar>
+	<table style="margin:3em auto;">
+		<tr ng-repeat="i in utl.table" style="font-size: 3em;text-align: center;">
+			<td ng-repeat="k in i" style="border: solid 1px;height: 2em;width: 2em;"
+				ng-click="onclick($index+$parent.$index*3)">
+				<ons-icon icon="{{utl.what[k.text]}}"></ons-icon>
+			</td>
+		</tr>
+	</table>
+	<ons-bottom-toolbar>
+		<div class="navigation-bar__center" style="-webkit-transform: rotate(180deg)">
+			<strong>{{utl.msg}}</strong>
+		</div>
+	</ons-bottom-toolbar>
+</ons-page>

@@ -6,13 +6,20 @@
     <div class="center">{{utl.msg}}</div>
   </ons-toolbar>
   <table style="margin: 3em auto">
+    <tr>
+      <th></th>
+      <th>A</th>
+      <th>B</th>
+      <th>C</th>
+    </tr>
     <tr ng-repeat="i in utl.table" style="font-size: 3em; text-align: center">
+      <th>{{ $index + 1 }}</th>
       <td
         ng-repeat="k in i"
         style="border: solid 1px; height: 2em; width: 2em"
         ng-click="onclick($index+$parent.$index*3)"
       >
-        <ons-icon icon="{{utl.what[k.text]}}"></ons-icon>
+        <ons-icon icon="{{utl.iconName[k.content]}}"></ons-icon>
       </td>
     </tr>
   </table>

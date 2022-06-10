@@ -1,0 +1,17 @@
+ons-col {
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+p,
+h3 {
+  text-align: center;
+}

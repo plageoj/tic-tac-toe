@@ -1,40 +1,51 @@
 <ons-page ng-controller="HomeCtrl">
-	<ons-toolbar>
-		<div class="center">
-			{{tr.app.name}}
-		</div>
-	</ons-toolbar>
-	<ons-row>
-		<ons-col>
-			<ons-button modifier="large quiet" style="line-height: 5em" ng-click="start(true)">
-				{{tr.home.vsComputer}}
-			</ons-button>
-		</ons-col>
-	</ons-row>
-	<ons-row>
-		<ons-col>
-			<ons-button modifier="large quiet" style="line-height:5em" ng-click="start(false)">
-				<ons-icon icon="ion-android-contacts"></ons-icon>
-				{{tr.home.faceToFace}}
-			</ons-button>
-		</ons-col>
-		<ons-col>
-			<ons-button modifier="large quiet" style="line-height:5em;">
-				<ons-icon icon="ion-earth"></ons-icon>
-				{{tr.home.webBattle}}
-			</ons-button>
-		</ons-col>
-	</ons-row>
-	<br>
-	<ons-button modifier="large quiet" ng-click="myNavigator.pushPage('howto.html')">{{tr.home.howto}}</ons-button>
-	<br>
-	<ons-button modifier="large quiet">
-		<ons-icon icon="ion-gear-a"></ons-icon>
-		設定 / Preferences
-	</ons-button>
-	<p>
-		Tic-Tac-Toe NEO Ver. 0.5.0<br>
-		Copyright (c) 2015-2016<br>
-		by Masayuki Sugahara
-	</p>
+  <ons-toolbar>
+    <div class="center">{{tr.app.name}}</div>
+  </ons-toolbar>
+  <ons-row>
+    <ons-col>
+      <ons-button
+        modifier="large quiet"
+        style="line-height: 5em"
+        ng-click="start(true)"
+      >
+        {{tr.home.vsComputer}}
+      </ons-button>
+    </ons-col>
+  </ons-row>
+  <ons-row>
+    <ons-col>
+      <ons-button
+        modifier="large quiet"
+        style="line-height: 5em"
+        ng-click="start(false)"
+      >
+        <ons-icon icon="ion-android-contacts"></ons-icon>
+        {{tr.home.faceToFace}}
+      </ons-button>
+    </ons-col>
+    <ons-col>
+      <ons-button modifier="large quiet" style="line-height: 5em">
+        <ons-icon icon="ion-earth"></ons-icon>
+        {{tr.home.webBattle}}
+      </ons-button>
+    </ons-col>
+  </ons-row>
+  <br />
+  <ons-button
+    modifier="large quiet"
+    ng-click="myNavigator.pushPage('howto.html')"
+    >{{tr.home.howto}}</ons-button
+  >
+  <br />
+  <ons-button modifier="large quiet">
+    <ons-icon icon="ion-gear-a"></ons-icon>
+    設定 / Preferences
+  </ons-button>
+  <p>
+    Tic-Tac-Toe NEO Ver. 0.6.0<br />
+    Copyright (c) 2015-2016<br />
+    by Masayuki Sugahara<br />
+    Powered by AngularJS v.{{version}}
+  </p>
 </ons-page>

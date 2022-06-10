@@ -2,7 +2,7 @@
 	"app": {
 		"name": "三目並べ NEO",
 		"back": "戻る",
-      "translating":""
+		"translating": ""
 	},
 	"home": {
 		"faceToFace": "ふたりで対戦",
@@ -11,6 +11,10 @@
 		"vsComputer": "コンピュータ対戦"
 	},
 	"game": {
+		"computer": [
+			"あなた",
+			"コンピュータ"
+		],
 		"players": [
 			"先手",
 			"後手"

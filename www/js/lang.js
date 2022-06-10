@@ -1,21 +1,19 @@
-angular.module("tictactoelang", [])
-    .controller("LangCtrl", ["$scope", "$http", "$timeout", function ($scope, $http, $timeout) {
-        var ln;
-        $timeout(function () {
-            navigator.globalization.getLocaleName(function (lang) {
-                ln = lang.value.substr(0, 2);
-                getLang(ln);
-            }, function () {
-                getLang("en");
-            });
-        }, 1000);
+angular.module("tictactoelang", []).controller("LangCtrl", [
+  "$scope",
+  "$http",
+  function ($scope, $http) {
+    const getLang = (code) => {
+      $http
+        .get("lang/" + code + ".json")
+        .success(function (d) {
+          $scope.tr = d;
+        })
+        .error(function () {
+          getLang("en");
+        });
+    };
 
-        var getLang = function (code) {
-            $http.get("lang/" + code + ".json").success(function (d) {
-            	$scope.tr = d;
-            }).error(function () {
-                getLang("en");
-            });
-        };
-        getLang("ja");
-    }])
+    const language = navigator.language.substring(0, 2) || "en";
+    getLang(language);
+  },
+]);
